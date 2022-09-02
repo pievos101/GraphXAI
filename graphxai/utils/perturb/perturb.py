@@ -32,7 +32,6 @@ def rewire_edges(edge_index: torch.Tensor, num_nodes: int,
         nswap = nswap if nswap else 1 
 
     # Convert to networkx graph for rewiring edges
-    # import ipdb; ipdb.set_trace()
     if data is None:
         data = Data(edge_index=edge_index, num_nodes=num_nodes)
     if G is None:

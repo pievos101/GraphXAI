@@ -4,7 +4,6 @@ from typing import Union, List
 
 from networkx.classes.function import to_undirected
 import networkx as nx
-import ipdb
 import torch
 import numpy as np
 import matplotlib.pyplot as plt
@@ -204,7 +203,6 @@ def calculate_delta(shape_graph: ShapeGraph, train_set, model: torch.nn.Module, 
             continue
         pert_x = shape_graph.get_graph().x.clone()
         pert_x[n_id] += torch.normal(0, 0.01, pert_x[n_id].shape)
-        # ipdb.set_trace()
         org_vec = F.softmax(model(shape_graph.get_graph().x, shape_graph.get_graph().edge_index)[n_id], dim=-1)
         org_pred = torch.argmax(org_vec)
         pert_vec = F.softmax(model(pert_x, pert_edge_index)[n_id], dim=-1)
@@ -296,7 +294,6 @@ def graph_exp_stability(generated_exp: Explanation, shape_graph: ShapeGraph, nod
     num_run = 25
     for run in range(num_run):
         # Generate perturbed counterpart
-        ipdb.set_trace()
         try:
             pert_edge_index = rewire_edges(shape_graph.get_graph().edge_index, node_idx=node_id.item(), num_nodes=1, seed=run)
         except:

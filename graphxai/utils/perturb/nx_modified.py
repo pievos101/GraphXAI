@@ -78,7 +78,6 @@ def swap(G, subset: list = None, nswap: int = 1,
         psum = float(sum(temp_dist))
         temp_dist = temp_dist/psum
         # for i in range(0, len(temp_dist)):
-        #     # import ipdb; ipdb.set_trace()
         #     cdf.append(cdf[i] + temp_dist[i].item())
             # cdf = torch.cat((cdf, torch.Tensor([cdf[i]+temp_dist[i]])), dim=-1)
         #return cdf  # .numpy()

@@ -1,19 +1,59 @@
-*.pyc
+# Custom
 *.DS_Store*
-**/*.egg-info/*
+*.err
+*.out
+*.swp
+.git-rewrite
 data/ShapeGraph/unzipped
 data/ShapeGraph/new_unzipped
 data/ShapeGraph/SG_heterophilic.pickle
 data/ShapeGraph/SG_homophilic.pickle
-*.out
-*.err
 formal/ShapeGraph/bigSG_explanations
 formal/realworld/mutag/EXPS
 formal/realworld/mutag/EXPS_old
 formal/realworld/fc/EXPS
 formal/realworld/benzene/EXPS
-old
-*__pycache__*
 graphxai/gnn_ex_eval
-.git-rewrite
+old
 docs
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# PyCharm
+.idea/
