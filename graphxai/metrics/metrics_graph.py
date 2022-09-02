@@ -3,7 +3,6 @@ from typing import Union, List
 import os
 from networkx.classes.function import to_undirected
 import networkx as nx
-import ipdb
 import torch
 import numpy as np
 import matplotlib.pyplot as plt

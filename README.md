@@ -6,11 +6,16 @@ GraphXAI is an open-source library for evaluating graph neural network (GNN) exp
 
 ## Installation
 
-After cloning the repo, install the graphxai package from the root directory of this project:
+1. Clone the repository
+2. Install dependencies (preferably in a virtualenv): `pip install -r requirements.txt`.
 
-  ```pip install -e .```
-  
-This will allow you to access features within the package, including datasets, explainers, and evaluation tools.
+    Mind that PyTorch and PyG for newer CUDA versions are distributed using additional indexes.
+    Please visit [A](https://pytorch.org/get-started/locally/#start-locally) and [B](https://pytorch-geometric.readthedocs.io/en/latest/notes/installation.html), and
+    adjust the requirements.txt file accordingly.
+
+3. Install the graphxai package (from the root directory): `pip install -e .`
+
+    This will allow you to access features within the package, including datasets, explainers, and evaluation tools.
 
 ## Data Availability
 

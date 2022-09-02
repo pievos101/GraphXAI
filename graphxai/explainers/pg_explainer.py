@@ -112,7 +112,6 @@ class PGExplainer(_BaseExplainer):
 
         with torch.set_grad_enabled(training):
             # Concat relevant node embeddings
-            # import ipdb; ipdb.set_trace()
             U, V = edge_index  # edge (u, v), U = (u), V = (v)
             h1 = emb[U]
             h2 = emb[V]
